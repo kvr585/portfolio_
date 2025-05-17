@@ -1,0 +1,202 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header Section */
+header.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navlinks {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navlinks li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navlinks li a:hover {
+    color: #00bcd4;
+}
+
+/* Intro Section */
+.intro {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.intro h1 {
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.intro h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.intro a {
+    text-decoration: none;
+}
+
+.intro button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.intro button:hover {
+    background: #008c9e;
+}
+
+/* Info Section */
+section.info {
+    padding: 80px 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-profile img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* About text */
+.info-text {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.info-text h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.info-text h2 {
+    font-size: 28px;
+    color: #00bcd4;
+    margin: 10px 0;
+}
+
+.info-text p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Skills Section */
+.skills {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.skills h3 {
+    grid-column: span 3;
+    font-size: 24px;
+    text-align: center;
+    color: #00bcd4;
+}
+
+.skills div {
+    background: #f9f9f9;
+    padding: 15px;
+    border-left: 5px solid #00bcd4;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.skills div strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Make stars gold */
+.skills div::after {
+    content: "★★★★★";
+    color: gold;
+    display: block;
+    font-size: 18px;
+}
+
+/* Buttons (Download CV and others) */
+button {
+    padding: 10px 20px;
+    background: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #008c9e;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .skills {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .intro h1 {
+        font-size: 36px;
+    }
+
+    .intro h3 {
+        font-size: 20px;
+    }
+
+    .info-profile img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    .intro {
+        margin-left: 20px;
+    }
+}
