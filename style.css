@@ -142,7 +142,7 @@ section.info {
     background-color: #ffffff;
     box-shadow: 15px 15px 50px rgba(194, 189, 189, 0.6);
     /* stronger shadow on hover */
-    padding: 0px 150px; 
+    padding: 0px 80px; 
     /* margin-left: 0px; */
     margin-right: 2px;
 }
@@ -177,7 +177,7 @@ section.info {
     display: block;
     font-size: 15px;
     margin-bottom: 5px;
-    margin-top: 30px;
+    margin-top: 5px;
 }
 
 /* Make stars gold */
@@ -185,7 +185,7 @@ section.info {
     content: "★★★★★";
     color: gold;
     display: block;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 /* Buttons (Download CV and others) */
@@ -205,7 +205,7 @@ button:hover {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .skills {
         grid-template-columns: 1fr 1fr;
     }
@@ -221,7 +221,7 @@ button:hover {
     .info-profile img {
         width: 150px;
     }
-}
+} */
 
 @media (max-width: 480px) {
     .skills {
