@@ -205,7 +205,7 @@ button:hover {
 }
 
 /* Responsive adjustments */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     .skills {
         grid-template-columns: 1fr 1fr;
     }
@@ -221,7 +221,7 @@ button:hover {
     .info-profile img {
         width: 150px;
     }
-} */
+}
 
 @media (max-width: 480px) {
     .skills {
